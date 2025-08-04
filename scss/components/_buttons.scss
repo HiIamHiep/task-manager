@@ -1,0 +1,88 @@
+@use "../abstracts";
+// Buttons
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: min(var(--btn-width, 200px));
+  height: min(var(--btn-height, 54px));
+  border: 1px solid #272633;
+  border-radius: 8px;
+
+  padding: 0 50px;
+  background: #131517;
+
+  font-size: 1.6rem;
+  line-height: 150%; /* 150% */
+  white-space: nowrap;
+
+  user-select: none;
+
+  overflow: hidden;
+
+  @include abstracts.screen(md) {
+    padding: 24px 26px;
+    height: 39px;
+  }
+
+  &__special-text {
+    background: linear-gradient(90deg, #eb9204 -33.14%, #83e868 116.38%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &--small {
+    height: 40px;
+  }
+
+  + .btn {
+    :not(.btn--no-margin) {
+      margin-left: 20px;
+    }
+  }
+
+  &--text {
+    background: transparent;
+    font-weight: 400;
+  }
+
+  &--primary {
+    color: #f9f9f9;
+    background: #282c30;
+    line-height: 162.5%;
+  }
+
+  &--secondary {
+    color: #f9f9f9;
+    background: linear-gradient(90deg, #eb9204 -33.14%, #83e868 116.38%);
+    line-height: 162.5%;
+  }
+
+  &--outline {
+    background: transparent;
+    border: 1px solid #d2d1d6;
+  }
+
+  &--rounded {
+    border-radius: 99px;
+  }
+
+  &--danger {
+    color: #fff;
+    background: #ed4337;
+  }
+
+  &[disabled],
+  &--disable {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+}

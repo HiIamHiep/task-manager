@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body style="background: #131517; height: 10000px">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="topbar">
+          <a href="#!" class="logo topbar__logo-link">
+            <img
+              src="./assets/icon/logo.svg"
+              alt="logo"
+              class="logo_img topbar__logo-img"
+            />
+          </a>
+          <nav class="navbar d-sm-none">
+            <ul class="navbar__list">
+              <li class="navbar__item navbar__item--active">
+                <a href="#!" class="navbar__item-link">Home</a>
+              </li>
+
+              <li class="navbar__item">
+                <a href="#!" class="navbar__item-link">Products</a>
+              </li>
+
+              <li class="navbar__item">
+                <a href="#!" class="navbar__item-link">Guidlines</a>
+              </li>
+
+              <li class="navbar__item">
+                <a href="#!" class="navbar__item-link">Review</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="top-act">
+            <a
+              href="#!"
+              class="top-act__signin btn btn__special-text"
+              style="--btn-width: 110px; --btn-height: 40px"
+            >
+              Sign In
+            </a>
+
+            <button class="top-act__more d-none d-sm-block">
+              <img
+                src="./assets/icon/more.svg"
+                alt=""
+                class="topbar__more-icon"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container">
+      <section class="hero">
+        <div class="hero__content">
+          <div class="hero__decorator-list">
+            <span class="hero__decorator hero__decorator--large"></span>
+            <span class="hero__decorator hero__decorator--medium"></span>
+            <span class="hero__decorator hero__decorator--small"></span>
+            <span class="hero__decorator hero__decorator--extra-small"></span>
+          </div>
+          <div class="hero__main">
+            <h1 class="hero__title">
+              Make
+              <div class="hero__management">
+                <strong class="hero__highlight">Management</strong>
+                <span
+                  class="hero__management--decorator hero__management--decorator-1"
+                ></span>
+                <span
+                  class="hero__management--decorator hero__management--decorator-2"
+                ></span>
+                <span
+                  class="hero__management--decorator hero__management--decorator-3"
+                ></span>
+                <span
+                  class="hero__management--decorator hero__management--decorator-4"
+                ></span>
+              </div>
+              Way More Easier Than Ever
+            </h1>
+            <p class="hero__desc d-sm-none">
+              The online collaborative management platform to bring more
+              efficiency and performace
+            </p>
+            <div class="hero__actions">
+              <button class="hero__actions-btn btn btn--secondary">
+                Request Demo
+              </button>
+              <button class="hero__actions-btn btn btn--primary">
+                Contact Us
+              </button>
+            </div>
+          </div>
+          <div class="hero__decorator-list">
+            <span class="hero__decorator hero__decorator--large"></span>
+            <span class="hero__decorator hero__decorator--medium"></span>
+            <span class="hero__decorator hero__decorator--small"></span>
+            <span class="hero__decorator hero__decorator--extra-small"></span>
+          </div>
+        </div>
+
+        <!-- Hero media -->
+        <div class="hero__media">
+          <div class="dashboard">
+            <!-- Decorator for dashboard -->
+            <div
+              class="dashboard__decorator hero__decorator hero__decorator--large"
+            ></div>
+            <!-- Dashboard sidebar -->
+            <div class="dashboard-sidebar">
+              <!-- Dashboard menu -->
+              <div class="dashboard-menu">
+                <span class="dashboard-menu__item">
+                  <img
+                    src="./assets/icon/more.svg"
+                    alt=""
+                    class="dashboard-menu__icon"
+                  />
+                </span>
+                <span class="dashboard-menu__item">
+                  <img
+                    src="./assets/icon/dashboard.svg"
+                    alt=""
+                    class="dashboard-menu__icon"
+                  />
+                </span>
+                <span class="dashboard-menu__title"> Dashboard </span>
+              </div>
+
+              <!-- Dashboard collection -->
+              <div class="dashboard-collection">
+                <div class="dashboard-collection__title">Collections</div>
+                <div class="dashboard-collection__list">
+                  <div
+                    class="dashboard-collection__item dashboard-collection__item--active"
+                  >
+                    <span
+                      class="dashboard-collection__icon collection-icon"
+                    ></span>
+                    <span
+                      class="dashboard-collection__label dashboard-collection__label--active"
+                      >School</span
+                    >
+                  </div>
+                  <div class="dashboard-collection__item">
+                    <span
+                      class="dashboard-collection__icon collection-icon collection-icon--orange"
+                    ></span>
+                    <span class="dashboard-collection__label"> Personal </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dashboard content -->
+            <div class="dashboard-content">
+              <div class="dashboard-content__header">
+                <div class="dashboard-content__back">
+                  <img
+                    src="./assets/icon/back.svg"
+                    alt=""
+                    class="dashboard-content__icon"
+                  />
+                  <span class="dashboard-content__page-title"> School </span>
+                </div>
+                <div class="dashboard-content__group-action">
+                  <span class="dashboard-content__three-dot">
+                    <img src="./assets/icon/three-dot.svg" />
+                  </span>
+
+                  <span class="dashboard-content__user">
+                    <img src="./assets/icon/user-menu.svg" alt="" />
+                  </span>
+                </div>
+              </div>
+              <div class="dashboard-content__body">
+                <div class="row">
+                  <div class="col-8">
+                    <div class="dashboard-task">
+                      <div class="dashboard-task__filter">
+                        <img
+                          src="./assets/icon/filter-icon.svg"
+                          alt=""
+                          class="dashboard-task__filter-icon"
+                        />
+                        <span class="dashboard-task__filter-title"> Sort </span>
+                      </div>
+                      <ul class="dashboard-task__list">
+                        <li class="dashboard-task__item">
+                          <span class="dashboard-task__title">
+                            Finish the Easay collaboration
+                          </span>
+                        </li>
+                        <li class="dashboard-task__item">
+                          <span class="dashboard-task__title">
+                            Do the math for next monday
+                          </span>
+                        </li>
+                        <li class="dashboard-task__item">
+                          <span class="dashboard-task__title">
+                            Read the next chapter of the book
+                          </span>
+                        </li>
+                        <li class="dashboard-task__item">
+                          <span class="dashboard-task__title">
+                            Send the collabaration files to jerusha
+                          </span>
+                        </li>
+                        <li class="dashboard-task__item">
+                          <span class="dashboard-task__title">
+                            Finish the powerpoint presentation
+                          </span>
+                        </li>
+                        <li class="dashboard-task__add">
+                          <span class="dashboard-task__add-title">
+                            Add task
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="dashboard-media">
+                      <figcaption class="dashboard-media__info">
+                        Daily task
+                      </figcaption>
+                      <div class="dashboard-media__wrap">
+                        <video
+                          class="dashboard-media__video"
+                          controls=""
+                          playsinline=""
+                          poster="./assets/img/hero.jpg"
+                        >
+                          <source
+                            src="./assets/video/THIS IS 4K ANIME (Jujutsu Kaisen).mp4"
+                            type="video/mp4"
+                          />
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Collection -->
+            <div class="collection">
+              <div class="collection__header">
+                <span class="collection__title">Collections</span>
+                <span>
+                  <img
+                    src="./assets/icon/three-dot.svg"
+                    alt=""
+                    class="collection__icon"
+                  />
+                </span>
+              </div>
+              <div class="collection-list">
+                <div class="collection-item">
+                  <div class="collection-item__info">
+                    <div
+                      class="colliection-item__icon collection-icon collection-icon--larger collection-icon--rounded-larger collection-icon--orange"
+                    ></div>
+                    <div>
+                      <div class="collection-item__title">School</div>
+                      <div class="collection-item__desc">
+                        4 task plus tomorrow
+                      </div>
+                    </div>
+                  </div>
+                  <div class="collection-item__progress">
+                    <div class="collection-item__progress--bar"></div>
+                    <div class="collection-item__progress--metric">1/3</div>
+                  </div>
+                </div>
+                <div class="collection-item">
+                  <div class="collection-item__info">
+                    <div
+                      class="colliection-item__icon collection-icon collection-icon--larger collection-icon--rounded-larger"
+                    ></div>
+                    <div>
+                      <div class="collection-item__title">School</div>
+                      <div class="collection-item__desc">
+                        4 task plus tomorrow
+                      </div>
+                    </div>
+                  </div>
+                  <div class="collection-item__progress">
+                    <div class="collection-item__progress--bar"></div>
+                    <div class="collection-item__progress--metric">1/3</div>
+                  </div>
+                </div>
+                <div class="collection-item">
+                  <div class="collection-item__info">
+                    <div
+                      class="colliection-item__icon collection-icon collection-icon--larger collection-icon--rounded-larger collection-icon--green"
+                    ></div>
+                    <div>
+                      <div class="collection-item__title">School</div>
+                      <div class="collection-item__desc">
+                        4 task plus tomorrow
+                      </div>
+                    </div>
+                  </div>
+                  <div class="collection-item__progress">
+                    <div class="collection-item__progress--bar"></div>
+                    <div class="collection-item__progress--metric">1/3</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Decorator for collection -->
+              <div
+                class="collection__decorator hero__decorator hero__decorator--large"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="feature">
+        <div class="row">
+          <div class="col">
+            <div class="feature__item">
+              <div class="feature__icon feature__icon--green">
+                <img src="./assets/icon/clipboard.svg" alt="" />
+              </div>
+              <h3 class="feature__title">Structured Reports</h3>
+              <p class="feature__desc">
+                Sed rhoncus sit sed tellus<br />
+                donec lorem lectus nunc,<br />
+                ornare
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature__item">
+              <div class="feature__icon feature__icon--orange">
+                <img src="./assets/icon/cloud.svg" alt="" />
+              </div>
+              <h3 class="feature__title">Cloud System</h3>
+              <p class="feature__desc">
+                Sed rhoncus sit sed tellus<br />
+                donec lorem lectus nunc,<br />
+                ornare
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="feature__item">
+              <div class="feature__icon feature__icon--purple">
+                <img src="./assets/icon/support.svg" alt="" />
+              </div>
+              <h3 class="feature__title">24/7 Support</h3>
+              <p class="feature__desc">
+                Sed rhoncus sit sed tellus<br />
+                donec lorem lectus nunc,<br />
+                ornare
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Daily Task -->
+      <section class="daily-task">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="daily-task__left">
+                <h2 class="daily-task__title">
+                  Okay, <span class="daily-task__highlight"> Let’s </span> see
+                  D’task in numbers
+                </h2>
+                <p class="daily-task__desc">
+                  Powering a productive team means using a powerful tool (and
+                  plenty of snacks). From meetings and projects to events and
+                  goal setting, D'taak intuitive features give any team the
+                  ability to quickly set up and customize workflows for just
+                  about anything
+                </p>
+
+                <div class="daily-task__info">
+                  <div class="daily-task__list">
+                    <div class="daily-task__item">
+                      <span class="daily-task__item-title">12M</span>
+                      <span class="daily-task__item-desc">Support</span>
+                    </div>
+                    <div class="daily-task__acts">
+                      <div class="daily-task__act">
+                        <input
+                          name="daily-task-btn"
+                          value="0"
+                          type="radio"
+                          hidden
+                          class="daily-task__input"
+                        />
+                        <label for="task-0" class="daily-task__act-btn"></label>
+                        <input
+                          name="daily-task-btn"
+                          value="1"
+                          type="radio"
+                          hidden
+                          checked
+                          class="daily-task__input"
+                        />
+                        <label for="task-1" class="daily-task__act-btn"></label>
+                        <input
+                          name="daily-task-btn"
+                          value="2"
+                          type="radio"
+                          hidden
+                          class="daily-task__input"
+                        />
+                        <label for="task-2" class="daily-task__act-btn"></label>
+                      </div>
+                      <div class="daily-task__item">
+                        <span class="daily-task__item-title">16</span>
+                        <span class="daily-task__item-desc">Acitve User</span>
+                      </div>
+                    </div>
+
+                    <div class="daily-task__item">
+                      <span class="daily-task__item-title">7/24</span>
+                      <span class="daily-task__item-desc">Languages</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="daily-task__right">
+                <div class="daily-task__circle"></div>
+
+                <div class="daily-task__node daily-task__node-1">
+                  <span class="daily-task__node-title">Online Support</span>
+                  <span
+                    class="daily-task__node-icon daily-task__node-icon--play"
+                  ></span>
+                </div>
+
+                <div class="daily-task__node daily-task__node-2">
+                  <span class="daily-task__node-title">Exercitation</span>
+                  <span
+                    class="daily-task__node-icon daily-task__node-icon--send"
+                  ></span>
+                </div>
+
+                <div class="daily-task__node daily-task__node-3">
+                  <span class="daily-task__node-title">Desgin</span>
+                  <span
+                    class="daily-task__node-icon daily-task__node-icon--send"
+                  ></span>
+                </div>
+
+                <div class="daily-task__node daily-task__node-4">
+                  <span
+                    class="daily-task__node-icon daily-task__node-icon--send"
+                  ></span>
+                  <span class="daily-task__node-title">D'task</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
