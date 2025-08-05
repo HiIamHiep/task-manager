@@ -1,6 +1,10 @@
 .feature {
   margin: 273px 30px 0;
 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
   padding: 71px 50px 53px;
   border-radius: 27px;
 
@@ -11,15 +15,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
 
-    &::after {
+    &:not(:last-child)::after {
       content: "";
       position: absolute;
-      top: 16%;
-      left: 78%;
+      top: 15%;
+      right: -25%;
       transform: translateY(-50%);
-      width: 53%;
-      border-bottom: 1px dashed #fff;
+      width: 50%;
+      height: 1px;
+      border-top: 1px dashed #fff;
+    }
+
+    &:last-child::after {
+      display: none;
     }
   }
 

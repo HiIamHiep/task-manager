@@ -4,12 +4,18 @@
   margin-top: 80px;
 
   @include abstracts.screen(sm) {
+    position: relative;
     padding: 0 22px;
+    margin-top: 32px;
   }
 
   &__content {
     display: flex;
     padding: 0 28px;
+
+    @include abstracts.screen(sm) {
+      padding: 0;
+    }
   }
 
   &__decorator {
@@ -26,26 +32,66 @@
       flex-direction: column;
       align-items: center;
       gap: 40px;
+
+      --decorator-width: 121px;
+      --decorator-height: 121px;
+
+      @include abstracts.screen(sm) {
+        position: absolute;
+        flex-direction: row;
+        gap: 10px;
+
+        &-left {
+          top: 0;
+          left: 50px;
+        }
+
+        &-right {
+          right: 27px;
+          top: 160px;
+          flex-direction: column;
+        }
+      }
     }
 
     &--large {
-      width: 121px;
-      height: 121px;
+      width: var(--decorator-width, 121px);
+      height: var(--decorator-height, 121px);
+
+      @include abstracts.screen(sm) {
+        width: calc(var(--decorator-width) / 4);
+        height: calc(var(--decorator-height) / 4);
+      }
     }
 
     &--medium {
-      width: 39px;
-      height: 39px;
+      width: calc(var(--decorator-width) / 2);
+      height: calc(var(--decorator-height) / 2);
+
+      @include abstracts.screen(sm) {
+        width: calc(var(--decorator-width) / 6);
+        height: calc(var(--decorator-height) / 6);
+      }
     }
 
     &--small {
-      width: 25px;
-      height: 25px;
+      width: calc(var(--decorator-width) / 3);
+      height: calc(var(--decorator-height) / 3);
+
+      @include abstracts.screen(sm) {
+        width: calc(var(--decorator-width) / 9);
+        height: calc(var(--decorator-height) / 9);
+      }
     }
 
     &--extra-small {
-      width: 14px;
-      height: 14px;
+      width: calc(var(--decorator-width) / 4);
+      height: calc(var(--decorator-height) / 4);
+
+      @include abstracts.screen(sm) {
+        width: calc(var(--decorator-width) / 13);
+        height: calc(var(--decorator-height) / 13);
+      }
     }
   }
 
@@ -65,7 +111,6 @@
     line-height: 116.667%;
 
     @include abstracts.screen(sm) {
-      margin-top: 62px;
       font-size: 3rem;
       font-weight: 600;
       line-height: normal;
@@ -144,7 +189,8 @@
 
     &-btn {
       @include abstracts.screen(md) {
-        height: 39px;
+        --btn-height: 39px;
+        --btn-width: 143px;
       }
     }
   }

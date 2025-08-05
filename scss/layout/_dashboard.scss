@@ -7,7 +7,8 @@
 
   &__decorator {
     position: absolute;
-    bottom: 0;
+    z-index: -1;
+    bottom: 35px;
     right: -60px;
     background: linear-gradient(183deg, #8ae764 1.17%, #e99506 115.87%);
     box-shadow: 0 39px 31px 0 #113719 inset;
@@ -233,7 +234,6 @@
   left: -75px;
   background: #0d1012;
   border-radius: 15px 15px 22px 22px;
-  z-index: 99;
 
   width: 220px;
   padding: 26px 15px;
@@ -350,6 +350,6 @@
     position: absolute;
     bottom: 100px;
     left: -56px;
-    z-index: 1;
+    z-index: -1;
   }
 }

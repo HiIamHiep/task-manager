@@ -1,10 +1,11 @@
 @use "../abstracts";
 
 .topbar {
+  margin: 30px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0;
+  padding: 10px 0;
 
   @include abstracts.screen(sm) {
     justify-content: space-between;
@@ -12,7 +13,8 @@
 }
 
 .logo {
-  padding: 16px 0;
+  @include abstracts.screen(sm) {
+  }
 }
 
 .navbar {
@@ -52,21 +54,27 @@
 
 .top-act {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 
   @include abstracts.screen(sm) {
-    gap: 24px;
   }
 
   &__signin {
-    padding: 8px 26px !important;
+    --btn-width: 110px;
+    --btn-height: 40px;
+
     height: 30px;
 
     font-size: 1.2rem;
     line-height: 100%;
+
+    @include abstracts.screen(sm) {
+      --btn-width: 80px;
+    }
   }
 
   &__more {
-    padding: 16px 0 16px 10px;
+    padding: 10px 0;
+    margin-left: 34px;
   }
 }

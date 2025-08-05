@@ -18,8 +18,8 @@
   </head>
   <body style="background: #131517; height: 10000px">
     <!-- Header -->
-    <header class="header">
-      <div class="container">
+    <div class="container">
+      <header class="header">
         <div class="topbar">
           <a href="#!" class="logo topbar__logo-link">
             <img
@@ -48,11 +48,7 @@
             </ul>
           </nav>
           <div class="top-act">
-            <a
-              href="#!"
-              class="top-act__signin btn btn__special-text"
-              style="--btn-width: 110px; --btn-height: 40px"
-            >
+            <a href="#!" class="top-act__signin btn btn__special-text">
               Sign In
             </a>
 
@@ -65,14 +61,14 @@
             </button>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
 
     <!-- Main -->
     <main class="container">
       <section class="hero">
         <div class="hero__content">
-          <div class="hero__decorator-list">
+          <div class="hero__decorator-list hero__decorator-list-left">
             <span class="hero__decorator hero__decorator--large"></span>
             <span class="hero__decorator hero__decorator--medium"></span>
             <span class="hero__decorator hero__decorator--small"></span>
@@ -111,7 +107,7 @@
               </button>
             </div>
           </div>
-          <div class="hero__decorator-list">
+          <div class="hero__decorator-list hero__decorator-list-right">
             <span class="hero__decorator hero__decorator--large"></span>
             <span class="hero__decorator hero__decorator--medium"></span>
             <span class="hero__decorator hero__decorator--small"></span>
@@ -340,47 +336,39 @@
 
       <!-- Features -->
       <section class="feature">
-        <div class="row">
-          <div class="col">
-            <div class="feature__item">
-              <div class="feature__icon feature__icon--green">
-                <img src="./assets/icon/clipboard.svg" alt="" />
-              </div>
-              <h3 class="feature__title">Structured Reports</h3>
-              <p class="feature__desc">
-                Sed rhoncus sit sed tellus<br />
-                donec lorem lectus nunc,<br />
-                ornare
-              </p>
-            </div>
+        <div class="feature__item">
+          <div class="feature__icon feature__icon--green">
+            <img src="./assets/icon/clipboard.svg" alt="" />
           </div>
-          <div class="col">
-            <div class="feature__item">
-              <div class="feature__icon feature__icon--orange">
-                <img src="./assets/icon/cloud.svg" alt="" />
-              </div>
-              <h3 class="feature__title">Cloud System</h3>
-              <p class="feature__desc">
-                Sed rhoncus sit sed tellus<br />
-                donec lorem lectus nunc,<br />
-                ornare
-              </p>
-            </div>
+          <h3 class="feature__title">Structured Reports</h3>
+          <p class="feature__desc">
+            Sed rhoncus sit sed tellus<br />
+            donec lorem lectus nunc,<br />
+            ornare
+          </p>
+        </div>
+        <div class="feature__item">
+          <div class="feature__icon feature__icon--orange">
+            <img src="./assets/icon/cloud.svg" alt="" />
           </div>
+          <h3 class="feature__title">Cloud System</h3>
+          <p class="feature__desc">
+            Sed rhoncus sit sed tellus<br />
+            donec lorem lectus nunc,<br />
+            ornare
+          </p>
+        </div>
 
-          <div class="col">
-            <div class="feature__item">
-              <div class="feature__icon feature__icon--purple">
-                <img src="./assets/icon/support.svg" alt="" />
-              </div>
-              <h3 class="feature__title">24/7 Support</h3>
-              <p class="feature__desc">
-                Sed rhoncus sit sed tellus<br />
-                donec lorem lectus nunc,<br />
-                ornare
-              </p>
-            </div>
+        <div class="feature__item">
+          <div class="feature__icon feature__icon--purple">
+            <img src="./assets/icon/support.svg" alt="" />
           </div>
+          <h3 class="feature__title">24/7 Support</h3>
+          <p class="feature__desc">
+            Sed rhoncus sit sed tellus<br />
+            donec lorem lectus nunc,<br />
+            ornare
+          </p>
         </div>
       </section>
 

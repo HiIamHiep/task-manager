@@ -14,8 +14,8 @@
   padding: 0 50px;
   background: #131517;
 
-  font-size: 1.6rem;
-  line-height: 150%; /* 150% */
+  font-size: 1.2rem;
+  line-height: 100%; /* 150% */
   white-space: nowrap;
 
   user-select: none;
@@ -23,8 +23,8 @@
   overflow: hidden;
 
   @include abstracts.screen(md) {
-    padding: 24px 26px;
-    height: 39px;
+    padding: 8px 18px;
+    height: 40px;
   }
 
   &__special-text {
