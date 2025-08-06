@@ -1,9 +1,12 @@
+@use "../abstracts";
+
 .dashboard {
   position: relative;
   display: flex;
-
+  width: 850px;
   border-radius: 8px 8px 0 0;
   background: #1f2326;
+  font-size: 0.3rem;
 
   &__decorator {
     position: absolute;
@@ -20,10 +23,44 @@
     padding: 18px 32px 15px 16px;
     gap: 25px;
 
-    &__title {
-      color: #98989c;
-      font-size: 1.4rem;
-      font-weight: 600;
+    @include abstracts.screen(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 12px;
+    }
+
+    &__page {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+
+      @include abstracts.screen(sm) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+      &-title {
+        color: #98989c;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+        @include abstracts.screen(sm) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &__icon {
+      &-bar {
+        width: 10px;
+        height: 10px;
+      }
+
+      &-page-current {
+        width: 8px;
+        height: 8px;
+      }
     }
   }
 
@@ -34,6 +71,10 @@
       font-size: 1.4rem;
       font-weight: 600;
       padding-left: 16px;
+
+      @include abstracts.screen(sm) {
+        font-size: 1.1rem;
+      }
     }
 
     &__list {
@@ -55,6 +96,10 @@
       color: #858b93;
       font-size: 1.2rem;
 
+      @include abstracts.screen(sm) {
+        font-size: 0.9rem;
+      }
+
       &--active {
         color: #d5d5d6;
       }
@@ -67,6 +112,11 @@
     flex: 1;
 
     background: #0d1012;
+
+    @include abstracts.screen(sm) {
+      margin: 10px 3px 0 0;
+      padding: 10px 15px;
+    }
 
     &__header {
       display: flex;
@@ -327,6 +377,12 @@
     height: min(var(--collection-height, 17px));
     border-radius: 5px;
     background: #ae8ff9;
+
+    @include abstracts.screen(sm) {
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+    }
 
     &--larger {
       width: 33px;
