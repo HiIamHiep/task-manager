@@ -11,6 +11,7 @@
 
   &__content {
     display: flex;
+    gap: 20px;
     padding: 0 28px;
 
     @include abstracts.screen(sm) {
@@ -27,14 +28,13 @@
     box-shadow: inset 0 39px 31px 0 #313141;
     border-radius: 50%;
 
+    display: block;
+
     &-list {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 40px;
-
-      --decorator-width: 121px;
-      --decorator-height: 121px;
 
       @include abstracts.screen(sm) {
         position: absolute;
@@ -55,8 +55,8 @@
     }
 
     &--large {
-      width: var(--decorator-width, 121px);
-      height: var(--decorator-height, 121px);
+      width: 120px;
+      height: 120px;
 
       @include abstracts.screen(sm) {
         width: calc(var(--decorator-width) / 4);
@@ -65,8 +65,8 @@
     }
 
     &--medium {
-      width: calc(var(--decorator-width) / 2);
-      height: calc(var(--decorator-height) / 2);
+      width: 40px;
+      height: 40px;
 
       @include abstracts.screen(sm) {
         width: calc(var(--decorator-width) / 6);
@@ -75,8 +75,8 @@
     }
 
     &--small {
-      width: calc(var(--decorator-width) / 3);
-      height: calc(var(--decorator-height) / 3);
+      width: 25px;
+      height: 25px;
 
       @include abstracts.screen(sm) {
         width: calc(var(--decorator-width) / 9);
@@ -85,8 +85,8 @@
     }
 
     &--extra-small {
-      width: calc(var(--decorator-width) / 4);
-      height: calc(var(--decorator-height) / 4);
+      width: 14px;
+      height: 14px;
 
       @include abstracts.screen(sm) {
         width: calc(var(--decorator-width) / 13);
