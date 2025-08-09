@@ -19,7 +19,7 @@
     <!-- Scripts -->
     <script src="./assets/js/scripts.js"></script>
   </head>
-  <body style="background: #131517">
+  <body style="background: var(--body-bg)" class="dark">
     <!-- Header -->
     <div class="container">
       <header class="header">
@@ -102,12 +102,10 @@
               efficiency and performace
             </p>
             <div class="hero__actions">
-              <button class="hero__actions-btn btn btn--secondary">
+              <button class="hero__actions-btn btn btn--primary">
                 Request Demo
               </button>
-              <button class="hero__actions-btn btn btn--primary">
-                Contact Us
-              </button>
+              <button class="hero__actions-btn btn">Contact Us</button>
             </div>
           </div>
           <div class="hero__decorator-list hero__decorator-list-right">
@@ -408,7 +406,7 @@
       <section class="feature">
         <div class="feature__item">
           <div class="feature__icon feature__icon--green">
-            <img src="./assets/icons/clipboard.svg" alt="" />
+            <img src="./assets/icons/report.svg" alt="" />
           </div>
           <h3 class="feature__title">Structured Reports</h3>
           <p class="feature__desc">
@@ -417,7 +415,7 @@
         </div>
         <div class="feature__item">
           <div class="feature__icon feature__icon--orange">
-            <img src="./assets/icons/cloud.svg" alt="" />
+            <img src="./assets/icons/cloud-system.svg" alt="" />
           </div>
           <h3 class="feature__title">Cloud System</h3>
           <p class="feature__desc">
@@ -437,107 +435,123 @@
       </section>
 
       <!-- Daily Task -->
-      <section class="daily-task">
-        <div class="container">
-          <div class="row">
-            <div class="col-6">
-              <div class="daily-task__left">
-                <h2 class="daily-task__title">
-                  Okay, <span class="daily-task__highlight"> Let’s </span> see
-                  D’task in numbers
-                </h2>
-                <p class="daily-task__desc">
-                  Powering a productive team means using a powerful tool (and
-                  plenty of snacks). From meetings and projects to events and
-                  goal setting, D'taak intuitive features give any team the
-                  ability to quickly set up and customize workflows for just
-                  about anything
-                </p>
+      <div class="container">
+        <section class="daily-task">
+          <div class="daily-task__left">
+            <h2 class="daily-task__title">
+              Okay, <span class="daily-task__highlight"> Let’s </span> see
+              D’task in numbers
+            </h2>
+            <p class="daily-task__desc">
+              Powering a productive team means using a powerful tool (and plenty
+              of snacks). From meetings and projects to events and goal setting,
+              D'taak intuitive features give any team the ability to quickly set
+              up and customize workflows for just about anything
+            </p>
 
-                <div class="daily-task__info">
-                  <div class="daily-task__list">
-                    <div class="daily-task__item">
-                      <span class="daily-task__item-title">12M</span>
-                      <span class="daily-task__item-desc">Support</span>
-                    </div>
-                    <div class="daily-task__acts">
-                      <div class="daily-task__act">
-                        <input
-                          name="daily-task-btn"
-                          value="0"
-                          type="radio"
-                          hidden
-                          class="daily-task__input"
-                        />
-                        <label for="task-0" class="daily-task__act-btn"></label>
-                        <input
-                          name="daily-task-btn"
-                          value="1"
-                          type="radio"
-                          hidden
-                          checked
-                          class="daily-task__input"
-                        />
-                        <label for="task-1" class="daily-task__act-btn"></label>
-                        <input
-                          name="daily-task-btn"
-                          value="2"
-                          type="radio"
-                          hidden
-                          class="daily-task__input"
-                        />
-                        <label for="task-2" class="daily-task__act-btn"></label>
-                      </div>
-                      <div class="daily-task__item">
-                        <span class="daily-task__item-title">16</span>
-                        <span class="daily-task__item-desc">Acitve User</span>
-                      </div>
-                    </div>
-
-                    <div class="daily-task__item">
-                      <span class="daily-task__item-title">7/24</span>
-                      <span class="daily-task__item-desc">Languages</span>
-                    </div>
+            <div class="daily-task__info">
+              <div class="daily-task__list">
+                <div class="daily-task__item">
+                  <span class="daily-task__item-title">12M</span>
+                  <span class="daily-task__item-desc">Support</span>
+                </div>
+                <div class="daily-task__acts">
+                  <div class="daily-task__act">
+                    <input
+                      name="daily-task-btn"
+                      value="0"
+                      type="radio"
+                      hidden
+                      class="daily-task__input"
+                    />
+                    <label for="task-0" class="daily-task__act-btn"></label>
+                    <input
+                      name="daily-task-btn"
+                      value="1"
+                      type="radio"
+                      hidden
+                      checked
+                      class="daily-task__input"
+                    />
+                    <label for="task-1" class="daily-task__act-btn"></label>
+                    <input
+                      name="daily-task-btn"
+                      value="2"
+                      type="radio"
+                      hidden
+                      class="daily-task__input"
+                    />
+                    <label for="task-2" class="daily-task__act-btn"></label>
+                  </div>
+                  <div class="daily-task__item">
+                    <span class="daily-task__item-title">16</span>
+                    <span class="daily-task__item-desc">Acitve User</span>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="daily-task__right">
-                <div class="daily-task__circle"></div>
 
-                <div class="daily-task__node daily-task__node-1">
-                  <span class="daily-task__node-title">Online Support</span>
-                  <span
-                    class="daily-task__node-icon daily-task__node-icon--play"
-                  ></span>
-                </div>
-
-                <div class="daily-task__node daily-task__node-2">
-                  <span class="daily-task__node-title">Exercitation</span>
-                  <span
-                    class="daily-task__node-icon daily-task__node-icon--send"
-                  ></span>
-                </div>
-
-                <div class="daily-task__node daily-task__node-3">
-                  <span class="daily-task__node-title">Desgin</span>
-                  <span
-                    class="daily-task__node-icon daily-task__node-icon--send"
-                  ></span>
-                </div>
-
-                <div class="daily-task__node daily-task__node-4">
-                  <span
-                    class="daily-task__node-icon daily-task__node-icon--send"
-                  ></span>
-                  <span class="daily-task__node-title">D'task</span>
+                <div class="daily-task__item">
+                  <span class="daily-task__item-title">7/24</span>
+                  <span class="daily-task__item-desc">Languages</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+          <div class="daily-task__right">
+            <!-- Daily task  -->
+            <div class="daily-task__circle"></div>
+
+            <!-- Daily bg rectangle -->
+            <div class="daily-task__rectangle">
+              <!-- Daily task rectangle group 1 -->
+              <div class="daily-task__rectangle-group">
+                <div class="daily-task__rectangle-item"></div>
+                <div class="daily-task__rectangle-item"></div>
+              </div>
+              <!-- Daily task rectangle group 2 -->
+              <div
+                class="daily-task__rectangle-group daily-task__rectangle-group--among"
+              >
+                <div class="daily-task__rectangle-item"></div>
+                <div class="daily-task__rectangle-item"></div>
+              </div>
+              <!-- Daily task rectangle group 3 -->
+              <div class="daily-task__rectangle-group">
+                <div class="daily-task__rectangle-item"></div>
+                <div class="daily-task__rectangle-item"></div>
+              </div>
+            </div>
+
+            <!-- Daily task item card -->
+            <div class="daily-task__node daily-task__node--1">
+              <span class="daily-task__node-title">Online Support</span>
+              <span
+                class="daily-task__node-icon daily-task__node-icon--play"
+              ></span>
+            </div>
+
+            <div class="daily-task__node daily-task__node--2">
+              <span class="daily-task__node-title">Exercitation</span>
+              <span
+                class="daily-task__node-icon daily-task__node-icon--send"
+              ></span>
+            </div>
+
+            <div class="daily-task__node daily-task__node--3">
+              <span class="daily-task__node-title">Desgin</span>
+              <span
+                class="daily-task__node-icon daily-task__node-icon--send"
+              ></span>
+            </div>
+
+            <div class="daily-task__node daily-task__node--4">
+              <span
+                class="daily-task__node-icon daily-task__node-icon--send"
+              ></span>
+              <span class="daily-task__node-title">D'task</span>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <script src="./assets/js/main.js"></script>
   </body>

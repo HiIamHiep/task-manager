@@ -1,0 +1,44 @@
+.dark {
+  --text-color: #858b93;
+  --text-color-highlight: #f9f9f9;
+
+  --body-bg: #131517;
+
+  --btn-bg: #282c30;
+  --linear-primary-bg: linear-gradient(90deg, #eb9204 -33.14%, #83e868 116.38%);
+
+  //   Decorator
+  --linear-decorator-bg: linear-gradient(
+    180deg,
+    #111118 6.06%,
+    rgba(43, 43, 61, 0) 119.38%
+  );
+  --decorator-shadow: 0 40px 30px 0 #313141 inset;
+
+  //   Dashboard
+  --dashboard-bg: #1f2326;
+  --dashboard-content-bg: #0d1012;
+  --dashboard-task-bg: #14181b;
+  --dashboard-task-active-bg: #2b2d2f;
+  --dashboard-task-active-color: #d5d5d6;
+  --dashboard-icon-bg: #151a1e;
+
+  --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%)
+    saturate(5101%) hue-rotate(355deg) brightness(124%) contrast(95%);
+
+  // Collection
+  --collection-bg: #0d1012;
+  --collection-item-bg: #14181b;
+
+  // Sound
+  --media-icon-color-active: brightness(0) saturate(100%) invert(98%) sepia(73%)
+    saturate(1302%) hue-rotate(42deg) brightness(99%) contrast(84%);
+  --media-icon-color-active: brightness(0) saturate(100%) invert(98%) sepia(73%)
+    saturate(1302%) hue-rotate(42deg) brightness(99%) contrast(84%);
+
+  // Daily task
+  --node-bg: #27292c;
+
+  // feature rectangle
+  --rectangle-item-bg: #191b1d;
+}

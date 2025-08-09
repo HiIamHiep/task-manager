@@ -1,11 +1,15 @@
 @use "../abstracts";
 
 .feature {
-  margin: 273px 30px 0;
+  --icon-size: 62px;
+  --feature-gap: 70px;
+  --line-offset: 50px;
+
+  margin: 70px 24px;
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: var(--feature-gap);
 
   padding: 71px 50px 53px;
   border-radius: 27px;
@@ -30,22 +34,20 @@
     }
 
     &:not(:last-child)::after {
-      content: "";
       position: absolute;
-      top: 15%;
-      right: -25%;
-      transform: translateY(-50%);
-      width: 50%;
-      height: 1px;
-      border-top: 1px dashed #708599;
+      content: "";
+      top: calc(var(--icon-size) * 0.5);
+      width: calc(var(--feature-gap) + 2 * var(--line-offset));
+      right: calc(-1 * (var(--feature-gap) + var(--line-offset)));
+      border-bottom: 2px dashed;
+      color: #858b93;
 
       @include abstracts.screen(sm) {
-        position: relative;
-        margin-top: 23px;
-        margin-bottom: 32px;
-        transform: translate(-27%, 0);
-
-        width: 90%;
+        top: auto;
+        right: auto;
+        bottom: calc(var(--feature-gap) * -0.5);
+        left: var(--line-offset);
+        width: calc(100% - 2 * var(--line-offset));
       }
     }
   }
@@ -55,12 +57,20 @@
     align-items: center;
     justify-content: center;
 
-    width: 62px;
-    height: 62px;
+    width: var(--icon-size);
+    height: var(--icon-size);
 
     border-radius: 50%;
+
+    & > img {
+      width: 30px;
+      height: 30px;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+        saturate(5101%) hue-rotate(355deg) brightness(124%) contrast(95%);
+    }
+
     &--green {
-      background-color: #0cce84;
+      background: #0cce84;
     }
 
     &--orange {
@@ -75,9 +85,9 @@
   &__title {
     margin-top: 31px;
 
-    color: #f9f9f9;
+    color: var(--text-color-highlight);
 
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: 600;
     line-height: 145.455%;
 

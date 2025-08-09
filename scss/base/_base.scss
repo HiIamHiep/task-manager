@@ -10,6 +10,19 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+:root {
+  --font-size-media: 1rem;
+  --sound-line-width: 2px;
+  --sound-line-height: 50px;
+  --sound-btn-icon-size: 15px;
+  --sound-btn-padding: 5px;
+
+  @include abstracts.screen(sm) {
+    --font-size-media: 0.3rem;
+    --sound-btn-icon-size: 6px;
+  }
+}
+
 html {
   font-size: 62.5%;
 }

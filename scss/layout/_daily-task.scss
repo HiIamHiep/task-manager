@@ -1,5 +1,18 @@
+@use "../abstracts";
+
 .daily-task {
-  margin-top: 157px;
+  display: flex;
+  gap: 20px;
+  margin-top: 140px;
+
+  @include abstracts.screen(md) {
+    flex-direction: column;
+  }
+
+  &__left {
+    flex: 0.45;
+    margin-top: 16px;
+  }
 
   &__title {
     color: #f9f9f9;
@@ -69,6 +82,12 @@
     margin-top: 86px;
     display: flex;
     gap: 17px;
+
+    @include abstracts.screen(sm) {
+      margin-top: 37px;
+      justify-content: center;
+      transform: scale(0.8);
+    }
   }
 
   &__item {
@@ -83,6 +102,8 @@
     justify-content: center;
     gap: 16px;
 
+    padding: 15px;
+
     &:nth-of-type(2) {
       border-radius: 9px;
       background: linear-gradient(
@@ -92,6 +113,11 @@
         #ef8f00 52.36%,
         #61e559 122.78%
       );
+
+      @include abstracts.screen(sm) {
+        z-index: 1;
+        margin: 95px -22px;
+      }
     }
 
     &-title {
@@ -109,16 +135,34 @@
     }
   }
 
+  &__act {
+    @include abstracts.screen(sm) {
+      display: none;
+    }
+  }
+
   &__right {
     position: relative;
-    height: 100%;
+    display: flex;
+    flex: 0.55;
+
+    @include abstracts.screen(sm) {
+      transform: scale(0.5);
+    }
+  }
+
+  &__diagram {
+    margin: 35px 50px;
+    width: 364px;
+    height: 364px;
   }
 
   &__circle {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 
     display: flex;
     justify-content: center;
@@ -156,38 +200,77 @@
     }
   }
 
+  &__rectangle {
+    position: absolute;
+    z-index: -1;
+
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    gap: 16px;
+    rotate: 12deg;
+    transform-origin: top left;
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      &--among {
+        margin-top: -70px;
+      }
+    }
+
+    &-item {
+      width: 150px;
+      height: 200px;
+      background: var(--rectangle-item-bg);
+    }
+  }
+
   &__node {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 45px;
-    max-width: 228px;
+
+    width: 160px;
+    height: 44px;
     border-radius: 5px;
-    background: #27292c;
+    background: var(--node-bg);
 
     padding: 15px;
 
-    &-1 {
+    &--1,
+    &--2,
+    &--3,
+    &--4 {
       position: absolute;
-      top: 50px;
-      left: 10px;
     }
 
-    &-2 {
-      position: absolute;
-      top: 10px;
-      right: 80px;
+    &--1 {
+      height: 60px;
+      width: 225px;
+      top: 20px;
+      left: -44px;
     }
 
-    &-3 {
-      position: absolute;
-      left: 55px;
-      bottom: 82px;
+    &--2 {
+      top: 16px;
+      right: -16px;
     }
 
-    &-4 {
-      position: absolute;
-      right: 53px;
-      bottom: 30px;
+    &--3 {
+      flex-direction: row-reverse;
+      width: 184px;
+      left: -30px;
+      bottom: 178px;
+    }
+
+    &--4 {
+      bottom: 120px;
+      right: -10px;
     }
 
     &-title {
