@@ -219,7 +219,6 @@
                       </figcaption>
                       <div class="dashboard-media__wrap">
                         <video
-                          id="media-video"
                           class="dashboard-media__video"
                           playsinline=""
                           poster="./assets/img/hero.jpg"
@@ -230,111 +229,6 @@
                           />
                           Your browser does not support the video tag.
                         </video>
-
-                        <div class="dashboard-media__center play">
-                          <button
-                            id="play-media-btn"
-                            class="dashboard-media__play"
-                          >
-                            <img
-                              src="./assets/icons/play.svg"
-                              alt=""
-                              class="dashboard-media__icon dashboard-media__icon--play"
-                            />
-                          </button>
-                          <button
-                            id="pause-media-btn"
-                            class="dashboard-media__pause"
-                          >
-                            <img
-                              src="./assets/icons/pause.svg"
-                              alt=""
-                              class="dashboard-media__icon dashboard-media__icon--pause"
-                            />
-                          </button>
-                        </div>
-
-                        <div class="dashboard-media__footer">
-                          <!-- Progress bar -->
-                          <div class="dashboard-media__duration">
-                            <input
-                              type="range"
-                              id="media-progress"
-                              class="dashboard-media__duration--progress"
-                              min="0"
-                              max="145.537914"
-                              value="0"
-                              step="1"
-                            />
-                            <div
-                              id="media-played"
-                              class="dashboard-media__duration--played"
-                            ></div>
-                            <div
-                              id="media-buffered"
-                              class="dashboard-media__duration--buffered"
-                            ></div>
-                          </div>
-
-                          <div class="dashboard-media__bottom">
-                            <!-- Time -->
-                            <div class="dashboard-media__time">
-                              <span id="current-time">0:00</span>
-                              <span>/</span>
-                              <span id="total-time">02:25</span>
-                            </div>
-
-                            <!-- Actions -->
-                            <div class="dashboard-media__action">
-                              <!-- Sound -->
-                              <div class="dashboard-media__sound sound-on">
-                                <button
-                                  id="sound-on-media-btn"
-                                  class="dashboard-media__btn dashboard-media__sound-on"
-                                >
-                                  <img
-                                    src="./assets/icons/speaker.svg"
-                                    alt=""
-                                  />
-                                </button>
-                                <button
-                                  id="sound-off-media-btn"
-                                  class="dashboard-media__btn dashboard-media__sound-off"
-                                >
-                                  <img
-                                    src="./assets/icons/speaker-x.svg"
-                                    alt=""
-                                  />
-                                </button>
-                                <div class="dashboard-media__sound-line">
-                                  <input
-                                    type="range"
-                                    id="media-sound"
-                                    class="dashboard-media__sound-line--slider"
-                                    min="0"
-                                    max="1"
-                                    value="1"
-                                    step="0.01"
-                                  />
-                                  <div
-                                    id="media-sound-value"
-                                    class="dashboard-media__sound-line--value"
-                                  ></div>
-                                </div>
-                              </div>
-
-                              <!-- Loop -->
-                              <div class="dashboard-media__loop">
-                                <button
-                                  id="loop-media-btn"
-                                  class="dashboard-media__btn"
-                                >
-                                  <img src="./assets/icons/loop.svg" alt="" />
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </figure>
                   </div>

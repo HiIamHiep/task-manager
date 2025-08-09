@@ -1610,6 +1610,7 @@ strong {
 @media (max-width: 575.98px) {
   .dashboard {
     flex-direction: column;
+    font-size: 0.9rem;
   }
 }
 .dashboard-menu {
@@ -1737,7 +1738,7 @@ strong {
 }
 @media (max-width: 575.98px) {
   .dashboard-task__item::before {
-    width: 20px;
+    width: 18px;
     height: 12px;
   }
 }
@@ -1754,11 +1755,11 @@ strong {
 }
 @media (max-width: 575.98px) {
   .dashboard-task__item::after {
-    top: 6px;
-    left: 17px;
+    top: 12px;
+    left: 16px;
     content: "";
-    width: 4px;
-    height: 12px;
+    width: 3px;
+    height: 6px;
   }
 }
 .dashboard-task__add {
@@ -1817,234 +1818,6 @@ strong {
   height: 100%;
   object-fit: cover;
   border-radius: 14px;
-}
-.dashboard-media__center {
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.dashboard-media__center.play > .dashboard-media__play {
-  visibility: visible;
-  opacity: 1;
-}
-.dashboard-media__center.pause > .dashboard-media__pause {
-  visibility: hidden;
-  opacity: 0;
-}
-.dashboard-media__center.pause:hover > .dashboard-media__pause {
-  visibility: visible;
-  opacity: 1;
-}
-.dashboard-media__play, .dashboard-media__pause {
-  position: absolute;
-  background: rgba(255, 254, 254, 0.7);
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility, opacity 0.4s;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.dashboard-media__icon {
-  width: 16px;
-  height: 16px;
-}
-@media (max-width: 575.98px) {
-  .dashboard-media__icon {
-    width: 6px;
-    height: 6px;
-  }
-}
-.dashboard-media__icon--play {
-  width: 100%;
-  padding-left: 2px;
-}
-.dashboard-media__icon--pause {
-  width: 100%;
-}
-.dashboard-media__footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 1.7em 1.7em;
-  z-index: 2;
-  transition: visibility 0.2s, opacity 0.2s;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-@media (max-width: 575.98px) {
-  .dashboard-media__footer {
-    gap: 0;
-  }
-}
-.dashboard-media__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 4px;
-  padding: 4px;
-}
-@media (max-width: 575.98px) {
-  .dashboard-media__bottom {
-    padding: 2px 4px;
-  }
-}
-.dashboard-media__time {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  color: var(--text-color-highlight);
-}
-@media (max-width: 575.98px) {
-  .dashboard-media__time {
-    font-size: 0.4rem;
-    gap: 2px;
-  }
-}
-.dashboard-media__action {
-  display: flex;
-  gap: 4px;
-}
-@media (max-width: 575.98px) {
-  .dashboard-media__action {
-    gap: 0;
-  }
-}
-.dashboard-media__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--sound-btn-padding);
-}
-.dashboard-media__btn > img {
-  width: var(--sound-btn-icon-size);
-  height: var(--sound-btn-icon-size);
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(5101%) hue-rotate(355deg) brightness(124%) contrast(95%);
-}
-.dashboard-media__sound {
-  position: relative;
-}
-.dashboard-media__sound-line {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility, opacity 0.4s;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  z-index: 20;
-  top: calc(-1 * (var(--sound-btn-padding) * 2 + var(--sound-btn-icon-size)));
-  right: calc(var(--sound-btn-padding) * 2 + var(--sound-btn-icon-size));
-  width: var(--sound-line-height);
-  height: calc(var(--sound-btn-padding) * 2 + var(--sound-btn-icon-size));
-  rotate: 90deg;
-  transform-origin: bottom right;
-}
-.dashboard-media__sound-line::after {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  width: var(--sound-line-width);
-  height: var(--sound-line-height);
-  right: calc(var(--sound-line-height) / 2 - 1px);
-  rotate: 90deg;
-  background: #a6a6a6;
-}
-.dashboard-media__sound-line--slider {
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  bottom: calc(var(--sound-btn-padding) * 2 + var(--sound-btn-icon-size));
-  writing-mode: vertical-rl;
-  height: var(--sound-line-height);
-  width: calc(var(--sound-btn-padding) * 2 + var(--sound-btn-icon-size));
-  rotate: 90deg;
-  transform-origin: bottom left;
-  cursor: pointer;
-  background: transparent;
-  appearance: none;
-}
-.dashboard-media__sound-line--slider::-webkit-slider-thumb {
-  appearance: none;
-  background: #f9f9f9;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-}
-.dashboard-media__sound-line--value {
-  position: absolute;
-  right: 0;
-  width: var(--sound-line-height);
-  height: var(--sound-line-width);
-}
-.dashboard-media__sound:hover > .dashboard-media__sound-line {
-  visibility: visible;
-  opacity: 1;
-}
-.dashboard-media__sound.sound-on > .dashboard-media__sound-off, .dashboard-media__sound.sound-off > .dashboard-media__sound-on {
-  display: none;
-}
-.dashboard-media__loop.active img {
-  filter: var(--media-icon-color-active);
-}
-.dashboard__duration {
-  position: relative;
-  width: 100%;
-  height: 3px;
-  background: #30302c;
-}
-.dashboard__duration--progress, .dashboard__duration--buffered, .dashboard__duration--played {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 3px;
-}
-.dashboard__duration--progress {
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  width: 100%;
-  cursor: pointer;
-  background: transparent;
-  appearance: none;
-}
-.dashboard__duration--progress::-webkit-slider-thumb {
-  appearance: none;
-  background: var(--linear-primary-bg);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-@media (max-width: 575.98px) {
-  .dashboard__duration--progress::-webkit-slider-thumb {
-    width: 8px;
-    height: 8px;
-  }
-}
-.dashboard__duration--played {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  background: var(--linear-primary-bg);
-}
-.dashboard__duration--buffered {
-  background: #a6a6a6;
-  pointer-events: none;
 }
 .dashboard-decorator {
   position: absolute;
@@ -2175,7 +1948,7 @@ strong {
 }
 @media (max-width: 575.98px) {
   .feature {
-    margin: 80px 0 0;
+    margin-top: 30px;
     flex-direction: column;
     padding: 54px 57px;
   }
