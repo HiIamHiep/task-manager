@@ -2299,7 +2299,7 @@ strong {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 98px;
+  gap: 53px;
 }
 .feature__process-background {
   position: absolute;
@@ -2313,6 +2313,7 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 7px;
 }
 .feature__timeline {
@@ -2348,6 +2349,9 @@ strong {
 }
 .feature__timeline--horizontal {
   background-image: repeating-linear-gradient(to bottom, #ccc 0 8px, transparent 8px 12px);
+}
+.feature__time {
+  white-space: nowrap;
 }
 .feature__box {
   --box-height: 62px;
@@ -2389,6 +2393,7 @@ strong {
   line-height: 125%;
 }
 .feature__info {
+  margin-top: 23px;
   display: flex;
   gap: 23px;
 }
@@ -2397,14 +2402,14 @@ strong {
 }
 .feature__item {
   display: flex;
-  flex-direction: column;
   gap: 8px;
 }
 .feature__item-group {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 .feature__item-icon {
+  margin-top: 4px;
   position: relative;
   width: 18px;
   height: 18px;
@@ -2416,16 +2421,27 @@ strong {
 .feature__item-icon::after {
   position: absolute;
   top: 2px;
-  left: 5px;
+  left: 4px;
   content: "";
   width: 7px;
   height: 10px;
-  border: 1px solid;
+  border: 1.5px solid;
   border-color: transparent transparent #fdfdfd #fdfdfd;
   rotate: -50deg;
 }
+.feature__item-icon--green {
+  background: #0cce84;
+}
+.feature__item-icon--orange {
+  background: #ef8f00;
+}
+.feature__item-icon--purple {
+  background: #ae8ff9;
+}
+.feature__item-icon--pink {
+  background: #ff7667;
+}
 .feature__item-title {
-  margin-left: 5px;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;

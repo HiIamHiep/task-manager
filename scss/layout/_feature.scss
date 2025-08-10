@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 98px;
+    gap: 53px;
 
     &-background {
       position: absolute;
@@ -29,6 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 7px;
   }
 
@@ -76,6 +77,10 @@
       #ccc 0 8px,
       transparent 8px 12px
     );
+  }
+
+  &__time {
+    white-space: nowrap;
   }
 
   &__box {
@@ -126,6 +131,7 @@
   }
 
   &__info {
+    margin-top: 23px;
     display: flex;
     gap: 23px;
 
@@ -136,14 +142,15 @@
 
   &__item {
     display: flex;
-    flex-direction: column;
     gap: 8px;
 
     &-group {
       display: flex;
+      flex-direction: column;
     }
 
     &-icon {
+      margin-top: 4px;
       position: relative;
       width: 18px;
       height: 18px;
@@ -157,18 +164,33 @@
       &::after {
         position: absolute;
         top: 2px;
-        left: 5px;
+        left: 4px;
         content: "";
         width: 7px;
         height: 10px;
-        border: 1px solid;
+        border: 1.5px solid;
         border-color: transparent transparent #fdfdfd #fdfdfd;
         rotate: -50deg;
+      }
+
+      &--green {
+        background: #0cce84;
+      }
+
+      &--orange {
+        background: #ef8f00;
+      }
+
+      &--purple {
+        background: #ae8ff9;
+      }
+
+      &--pink {
+        background: #ff7667;
       }
     }
 
     &-title {
-      margin-left: 5px;
       font-size: 1.8rem;
       font-style: normal;
       font-weight: 600;
