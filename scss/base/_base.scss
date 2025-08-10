@@ -16,6 +16,11 @@
   --sound-line-height: 50px;
   --sound-btn-icon-size: 15px;
   --sound-btn-padding: 5px;
+  // Box
+  --box-width: 160px;
+  --box-height: 44px;
+  --box-icon-rounded: 32px;
+  --box-bg: #27292c;
 
   @include abstracts.screen(sm) {
     --font-size-media: 0.3rem;

@@ -72,6 +72,7 @@
 
     <!-- Main -->
     <main class="container">
+      <!-- Hero -->
       <section class="hero">
         <div class="hero__content">
           <div class="hero__decorator-list hero__decorator-list-left">
@@ -299,156 +300,272 @@
         </div>
       </section>
 
-      <!-- Features -->
-      <section class="feature">
-        <div class="feature__item">
-          <div class="feature__icon feature__icon--green">
+      <!-- Service -->
+      <section class="service">
+        <div class="service__item">
+          <div class="service__icon service__icon--green">
             <img src="./assets/icons/report.svg" alt="" />
           </div>
-          <h3 class="feature__title">Structured Reports</h3>
-          <p class="feature__desc">
+          <h3 class="service__title">Structured Reports</h3>
+          <p class="service__desc">
             Sed rhoncus sit sed tellus donec lorem lectus nunc, ornare
           </p>
         </div>
-        <div class="feature__item">
-          <div class="feature__icon feature__icon--orange">
+        <div class="service__item">
+          <div class="service__icon service__icon--orange">
             <img src="./assets/icons/cloud-system.svg" alt="" />
           </div>
-          <h3 class="feature__title">Cloud System</h3>
-          <p class="feature__desc">
+          <h3 class="service__title">Cloud System</h3>
+          <p class="service__desc">
             Sed rhoncus sit sed tellus donec lorem lectus nunc, ornare
           </p>
         </div>
 
-        <div class="feature__item">
-          <div class="feature__icon feature__icon--purple">
+        <div class="service__item">
+          <div class="service__icon service__icon--purple">
             <img src="./assets/icons/support.svg" alt="" />
           </div>
-          <h3 class="feature__title">24/7 Support</h3>
-          <p class="feature__desc">
+          <h3 class="service__title">24/7 Support</h3>
+          <p class="service__desc">
             Sed rhoncus sit sed tellus donec lorem lectus nunc, ornare
           </p>
         </div>
       </section>
 
       <!-- Daily Task -->
-      <div class="container">
-        <section class="daily-task">
-          <div class="daily-task__left">
-            <h2 class="daily-task__title">
-              Okay, <span class="daily-task__highlight"> Let’s </span> see
-              D’task in numbers
-            </h2>
-            <p class="daily-task__desc">
-              Powering a productive team means using a powerful tool (and plenty
-              of snacks). From meetings and projects to events and goal setting,
-              D'taak intuitive features give any team the ability to quickly set
-              up and customize workflows for just about anything
-            </p>
+      <section class="daily-task">
+        <div class="daily-task__left">
+          <h2 class="daily-task__title">
+            Okay, <span class="daily-task__highlight"> Let’s </span> see D’task
+            in numbers
+          </h2>
+          <p class="daily-task__desc">
+            Powering a productive team means using a powerful tool (and plenty
+            of snacks). From meetings and projects to events and goal setting,
+            D'taak intuitive features give any team the ability to quickly set
+            up and customize workflows for just about anything
+          </p>
 
-            <div class="daily-task__info">
-              <div class="daily-task__list">
+          <div class="daily-task__info">
+            <div class="daily-task__list">
+              <div class="daily-task__item">
+                <span class="daily-task__item-title">12M</span>
+                <span class="daily-task__item-desc">Support</span>
+              </div>
+              <div class="daily-task__acts">
+                <div class="daily-task__act">
+                  <input
+                    name="daily-task-btn"
+                    value="0"
+                    type="radio"
+                    hidden
+                    class="daily-task__input"
+                  />
+                  <label for="task-0" class="daily-task__act-btn"></label>
+                  <input
+                    name="daily-task-btn"
+                    value="1"
+                    type="radio"
+                    hidden
+                    checked
+                    class="daily-task__input"
+                  />
+                  <label for="task-1" class="daily-task__act-btn"></label>
+                  <input
+                    name="daily-task-btn"
+                    value="2"
+                    type="radio"
+                    hidden
+                    class="daily-task__input"
+                  />
+                  <label for="task-2" class="daily-task__act-btn"></label>
+                </div>
                 <div class="daily-task__item">
-                  <span class="daily-task__item-title">12M</span>
-                  <span class="daily-task__item-desc">Support</span>
+                  <span class="daily-task__item-title">16</span>
+                  <span class="daily-task__item-desc">Acitve User</span>
                 </div>
-                <div class="daily-task__acts">
-                  <div class="daily-task__act">
-                    <input
-                      name="daily-task-btn"
-                      value="0"
-                      type="radio"
-                      hidden
-                      class="daily-task__input"
-                    />
-                    <label for="task-0" class="daily-task__act-btn"></label>
-                    <input
-                      name="daily-task-btn"
-                      value="1"
-                      type="radio"
-                      hidden
-                      checked
-                      class="daily-task__input"
-                    />
-                    <label for="task-1" class="daily-task__act-btn"></label>
-                    <input
-                      name="daily-task-btn"
-                      value="2"
-                      type="radio"
-                      hidden
-                      class="daily-task__input"
-                    />
-                    <label for="task-2" class="daily-task__act-btn"></label>
-                  </div>
-                  <div class="daily-task__item">
-                    <span class="daily-task__item-title">16</span>
-                    <span class="daily-task__item-desc">Acitve User</span>
-                  </div>
-                </div>
+              </div>
 
-                <div class="daily-task__item">
-                  <span class="daily-task__item-title">7/24</span>
-                  <span class="daily-task__item-desc">Languages</span>
-                </div>
+              <div class="daily-task__item">
+                <span class="daily-task__item-title">7/24</span>
+                <span class="daily-task__item-desc">Languages</span>
               </div>
             </div>
           </div>
-          <div class="daily-task__right">
-            <!-- Daily task  -->
-            <div class="daily-task__circle"></div>
+        </div>
+        <div class="daily-task__right">
+          <!-- Daily task  -->
+          <div class="daily-task__circle"></div>
 
-            <!-- Daily bg rectangle -->
-            <div class="daily-task__rectangle">
-              <!-- Daily task rectangle group 1 -->
-              <div class="daily-task__rectangle-group">
-                <div class="daily-task__rectangle-item"></div>
-                <div class="daily-task__rectangle-item"></div>
+          <!-- Daily bg rectangle -->
+          <div class="daily-task__rectangle">
+            <!-- Daily task rectangle group 1 -->
+            <div class="daily-task__rectangle-group">
+              <div class="daily-task__rectangle-item"></div>
+              <div class="daily-task__rectangle-item"></div>
+            </div>
+            <!-- Daily task rectangle group 2 -->
+            <div
+              class="daily-task__rectangle-group daily-task__rectangle-group--among"
+            >
+              <div class="daily-task__rectangle-item"></div>
+              <div class="daily-task__rectangle-item"></div>
+            </div>
+            <!-- Daily task rectangle group 3 -->
+            <div class="daily-task__rectangle-group">
+              <div class="daily-task__rectangle-item"></div>
+              <div class="daily-task__rectangle-item"></div>
+            </div>
+          </div>
+
+          <!-- Daily task item card -->
+          <div class="box daily-task__node daily-task__node--1">
+            <span class="box-title">Online Support</span>
+            <span class="box-icon box-icon--play"></span>
+          </div>
+
+          <div class="box daily-task__node daily-task__node--2">
+            <span class="box-title">Exercitation</span>
+            <span class="box-icon box-icon--play"></span>
+          </div>
+
+          <div class="box daily-task__node daily-task__node--3">
+            <span class="box-title">Desgin</span>
+            <span class="box-icon box-icon--play"></span>
+          </div>
+
+          <div class="box daily-task__node daily-task__node--4">
+            <span class="box-title">D'task</span>
+            <span class="box-icon box-icon--play"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature -->
+      <section class="feature">
+        <div class="row gx-5">
+          <!-- Timeline process -->
+          <div class="col">
+            <div class="feature__process">
+              <!-- div background blur -->
+              <div class="feature__process-background"></div>
+              <div class="feature_dashline">
+                <div
+                  class="feature__timeline feature__timeline--horizontal"
+                ></div>
+                <span class="feature__time">9 am</span>
               </div>
-              <!-- Daily task rectangle group 2 -->
+              <div class="feature_dashline">
+                <div
+                  class="feature__timeline feature__timeline--horizontal"
+                ></div>
+                <div class="feature__time">10 am</div>
+              </div>
+              <div class="feature_dashline">
+                <div class="feature__timeline feature__timeline--horizontal">
+                  <div class="feature__timeline-progress">
+                    <span class="feature__timeline-progress-percent">14%</span>
+                    <span class="feature__timeline-progress-name"
+                      >Churn Rish</span
+                    >
+                  </div>
+                </div>
+                <span class="feature__time">11 am</span>
+              </div>
+              <div class="feature_dashline">
+                <div
+                  class="feature__timeline feature__timeline--horizontal"
+                ></div>
+                <div class="feature__time">12 am</div>
+              </div>
+
+              <!-- Feature box -->
+              <div class="box box--bg-opacity feature__box feature__box--1">
+                <span class="box-title box-title--tertiary"
+                  >Hi-Fidelity Lending Page</span
+                >
+              </div>
+
               <div
-                class="daily-task__rectangle-group daily-task__rectangle-group--among"
+                class="box box--bg-opacity box-bg--filter feature__box feature__box--2"
               >
-                <div class="daily-task__rectangle-item"></div>
-                <div class="daily-task__rectangle-item"></div>
+                <span class="box-title">Component UI</span>
+                <div class="box-icon b">
+                  <img
+                    src="./assets/img/avatar/Adam.png"
+                    alt=""
+                    class="feature__box-avatar"
+                  />
+                </div>
               </div>
-              <!-- Daily task rectangle group 3 -->
-              <div class="daily-task__rectangle-group">
-                <div class="daily-task__rectangle-item"></div>
-                <div class="daily-task__rectangle-item"></div>
+
+              <div class="box box--bg-opacity feature__box feature__box--3">
+                <span class="box-title box-title--secondary"
+                  >Create lo-Fidelity Wireframe</span
+                >
               </div>
-            </div>
-
-            <!-- Daily task item card -->
-            <div class="daily-task__node daily-task__node--1">
-              <span class="daily-task__node-title">Online Support</span>
-              <span
-                class="daily-task__node-icon daily-task__node-icon--play"
-              ></span>
-            </div>
-
-            <div class="daily-task__node daily-task__node--2">
-              <span class="daily-task__node-title">Exercitation</span>
-              <span
-                class="daily-task__node-icon daily-task__node-icon--send"
-              ></span>
-            </div>
-
-            <div class="daily-task__node daily-task__node--3">
-              <span class="daily-task__node-title">Desgin</span>
-              <span
-                class="daily-task__node-icon daily-task__node-icon--send"
-              ></span>
-            </div>
-
-            <div class="daily-task__node daily-task__node--4">
-              <span
-                class="daily-task__node-icon daily-task__node-icon--send"
-              ></span>
-              <span class="daily-task__node-title">D'task</span>
             </div>
           </div>
-        </section>
-      </div>
+
+          <div class="col">
+            <h2 class="feature__title">
+              Features to help your
+              <span class="feature__text--highlight">team succeed</span>
+            </h2>
+            <div class="feature__info-group">
+              <div class="feature__info">
+                <div class="feature__item">
+                  <div class="feature__item-group">
+                    <span class="feature__item-icon"></span>
+                    <span class="feature__item-title">Choose a view</span>
+                  </div>
+                  <p class="feature__item-desc">
+                    Nullam dignssim mauris, dictumst quisque.
+                  </p>
+                </div>
+                <div class="feature__item">
+                  <div class="feature__info">
+                    <span class="feature__item-icon"></span>
+
+                    <span class="feature__item-title"
+                      >Meet your new butler</span
+                    >
+                  </div>
+
+                  <p class="feature__item-desc">
+                    Nullam dignssim mauris, dictumst quisque.
+                  </p>
+                </div>
+              </div>
+              <div class="feature__info">
+                <div class="feature__item">
+                  <div class="feature__info">
+                    <span class="feature__item-icon"></span>
+
+                    <span class="feature__item-title"
+                      >Dive into the details</span
+                    >
+                  </div>
+
+                  <p class="feature__item-desc">
+                    Nullam dignssim mauris, dictumst quisque.
+                  </p>
+                </div>
+                <div class="feature__item">
+                  <div class="feature__info">
+                    <span class="feature__item-icon"></span>
+
+                    <span class="feature__item-title">Power up</span>
+                  </div>
+                  <p class="feature__item-desc">
+                    Nullam dignssim mauris, dictumst quisque.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./assets/js/main.js"></script>
   </body>

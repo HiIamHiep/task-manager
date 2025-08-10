@@ -1,0 +1,111 @@
+@use "../abstracts";
+
+.service {
+  --icon-size: 62px;
+  --feature-gap: 70px;
+  --line-offset: 50px;
+
+  margin: 70px 24px;
+
+  display: flex;
+  flex-direction: row;
+  gap: var(--feature-gap);
+
+  padding: 71px 50px 53px;
+  border-radius: 27px;
+
+  background: #282c30;
+
+  @include abstracts.screen(sm) {
+    margin-top: 30px;
+
+    flex-direction: column;
+    padding: 54px 57px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    @include abstracts.screen(sm) {
+    }
+
+    &:not(:last-child)::after {
+      position: absolute;
+      content: "";
+      top: calc(var(--icon-size) * 0.5);
+      width: calc(var(--feature-gap) + 2 * var(--line-offset));
+      right: calc(-1 * (var(--feature-gap) + var(--line-offset)));
+      border-bottom: 2px dashed;
+      color: #858b93;
+
+      @include abstracts.screen(sm) {
+        top: auto;
+        right: auto;
+        bottom: calc(var(--feature-gap) * -0.5);
+        left: var(--line-offset);
+        width: calc(100% - 2 * var(--line-offset));
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: var(--icon-size);
+    height: var(--icon-size);
+
+    border-radius: 50%;
+
+    & > img {
+      width: 30px;
+      height: 30px;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+        saturate(5101%) hue-rotate(355deg) brightness(124%) contrast(95%);
+    }
+
+    &--green {
+      background: #0cce84;
+    }
+
+    &--orange {
+      background: #ef8f00;
+    }
+
+    &--purple {
+      background: #ae8ff9;
+    }
+  }
+
+  &__title {
+    margin-top: 31px;
+
+    color: var(--text-color-highlight);
+
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 145.455%;
+
+    @include abstracts.screen(sm) {
+      text-align: center;
+    }
+  }
+
+  &__desc {
+    margin-top: 5px;
+    color: #858b93;
+
+    font-size: 1.6rem;
+    line-height: 162.5%;
+    text-align: center;
+
+    @include abstracts.screen(sm) {
+      margin-top: 11px;
+    }
+  }
+}
