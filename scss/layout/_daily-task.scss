@@ -212,6 +212,10 @@
     rotate: 12deg;
     transform-origin: top left;
 
+    @include abstracts.screen(sm) {
+      top: 10%;
+    }
+
     &-group {
       display: flex;
       flex-direction: column;
@@ -247,6 +251,10 @@
     &--3,
     &--4 {
       position: absolute;
+
+      @include abstracts.screen(sm) {
+        z-index: 1;
+      }
     }
 
     &--1 {
@@ -254,11 +262,21 @@
       width: 225px;
       top: 20px;
       left: -44px;
+
+      @include abstracts.screen(sm) {
+        top: -210px;
+        left: -130px;
+      }
     }
 
     &--2 {
       top: 16px;
       right: -16px;
+
+      @include abstracts.screen(sm) {
+        top: -160px;
+        right: -140px;
+      }
     }
 
     &--3 {
@@ -266,11 +284,21 @@
       width: 184px;
       left: -30px;
       bottom: 178px;
+
+      @include abstracts.screen(sm) {
+        left: -153px;
+        bottom: 94px;
+      }
     }
 
     &--4 {
       bottom: 120px;
       right: -10px;
+
+      @include abstracts.screen(sm) {
+        bottom: 50px;
+        right: -150px;
+      }
     }
 
     &-title {

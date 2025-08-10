@@ -92,6 +92,10 @@
       gap: 6px;
       color: var(--text-color-highlight);
 
+      @include abstracts.screen(sm) {
+        margin: 0 44px;
+      }
+
       &-img {
         width: 8px;
         height: 8px;
