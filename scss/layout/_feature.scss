@@ -127,6 +127,7 @@
 
   &__info {
     display: flex;
+    gap: 23px;
 
     &-group {
       margin-top: 23px;
@@ -140,7 +141,6 @@
 
     &-group {
       display: flex;
-      align-items: center;
     }
 
     &-icon {

@@ -2390,6 +2390,7 @@ strong {
 }
 .feature__info {
   display: flex;
+  gap: 23px;
 }
 .feature__info-group {
   margin-top: 23px;
