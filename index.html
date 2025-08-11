@@ -352,35 +352,13 @@
                 <span class="daily-task__item-title">12M</span>
                 <span class="daily-task__item-desc">Support</span>
               </div>
-              <div class="daily-task__acts">
-                <div class="daily-task__act">
-                  <input
-                    name="daily-task-btn"
-                    value="0"
-                    type="radio"
-                    hidden
-                    class="daily-task__input"
-                  />
-                  <label for="task-0" class="daily-task__act-btn"></label>
-                  <input
-                    name="daily-task-btn"
-                    value="1"
-                    type="radio"
-                    hidden
-                    checked
-                    class="daily-task__input"
-                  />
-                  <label for="task-1" class="daily-task__act-btn"></label>
-                  <input
-                    name="daily-task-btn"
-                    value="2"
-                    type="radio"
-                    hidden
-                    class="daily-task__input"
-                  />
-                  <label for="task-2" class="daily-task__act-btn"></label>
+              <div class="daily-task__act">
+                <div class="daily-task__dots">
+                  <div class="daily-task__dot"></div>
+                  <div class="daily-task__dot daily-task__dot--active"></div>
+                  <div class="daily-task__dot"></div>
                 </div>
-                <div class="daily-task__item">
+                <div class="daily-task__item daily-task__item--active">
                   <span class="daily-task__item-title">16</span>
                   <span class="daily-task__item-desc">Acitve User</span>
                 </div>
@@ -541,7 +519,9 @@
               </div>
               <div class="feature__info">
                 <div class="feature__item">
-                  <span class="feature__item-icon feature__item-purple"></span>
+                  <span
+                    class="feature__item-icon feature__item-icon--purple"
+                  ></span>
                   <div class="feature__item-group">
                     <span class="feature__item-title"
                       >Dive into the details</span

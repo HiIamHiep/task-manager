@@ -1,7 +1,16 @@
+@use "../abstracts";
+
 .feature {
-  margin-top: 170px;
-  padding: 150px 50px;
+  margin: 170px -42px 0;
+  padding: 150px 50px 80px;
+  background: #191b1d;
   color: var(--text-color-highlight);
+
+  @include abstracts.screen(sm) {
+    display: none;
+    margin: 48px -20px 0;
+    padding: 80px 0 58px;
+  }
 
   &__process {
     position: relative;
