@@ -1,0 +1,66 @@
+.about {
+  margin-top: 140px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__title {
+    width: 497px;
+    color: #f9f9f9;
+    text-align: center;
+
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 125%;
+  }
+
+  &__desc {
+    margin-top: 30px;
+
+    color: #858b93;
+    text-align: center;
+
+    font-size: 1.6rem;
+    line-height: 162.5%;
+  }
+
+  &__act {
+    &-list {
+      margin-top: 44px;
+      display: flex;
+      gap: 17px;
+    }
+  }
+
+  &__task {
+    &-list {
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr;
+      gap: 32px;
+      width: 100%;
+      margin-top: 75px;
+
+      align-items: stretch; /* 👈 ép các item kéo cao bằng nhau */
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  &__text {
+    &--hightlight {
+      background: var(
+        --Primary-color-leniar-color,
+        linear-gradient(90deg, #eb9204 -33.14%, #83e868 116.38%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

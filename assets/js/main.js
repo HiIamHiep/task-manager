@@ -41,3 +41,34 @@ dailyItem.forEach((item, index) => {
     }
   });
 });
+
+// Active group
+const taskItems = $$(".task-item__group-wrapper");
+function setActiveTask(index) {
+  // Delete item & checked
+  taskItems.forEach((item) => {
+    item.classList.remove("task-item__group-wrapper--active");
+
+    const check = item.querySelector(".task-item__check");
+
+    if (check.classList.contains("task-item__check--active")) {
+      check.classList.remove("task-item__check--active");
+    }
+  });
+
+  const itemCurrent = taskItems[index];
+
+  itemCurrent.classList.add("task-item__group-wrapper--active");
+  itemCurrent
+    .querySelector(".task-item__check")
+    .classList.add("task-item__check--active");
+}
+
+// Set active for task item
+taskItems.forEach((item, index) => {
+  item.addEventListener("click", function () {
+    if (!this.classList.contains("task-item__group-wrapper--active")) {
+      setActiveTask(index);
+    }
+  });
+});

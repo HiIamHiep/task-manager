@@ -1,14 +1,14 @@
 @use "../abstracts";
 
 .feature {
-  margin: 170px -42px 0;
+  margin-top: 170px;
   padding: 150px 50px 80px;
   background: #191b1d;
   color: var(--text-color-highlight);
 
   @include abstracts.screen(sm) {
     display: none;
-    margin: 48px -20px 0;
+    margin-top: 48px;
     padding: 80px 0 58px;
   }
 

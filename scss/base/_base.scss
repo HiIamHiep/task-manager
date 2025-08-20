@@ -21,6 +21,7 @@
   --box-height: 44px;
   --box-icon-rounded: 32px;
   --box-bg: #27292c;
+  --box-bg-2: #282c30;
 
   @include abstracts.screen(sm) {
     --font-size-media: 0.3rem;
