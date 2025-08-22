@@ -72,3 +72,36 @@ taskItems.forEach((item, index) => {
     }
   });
 });
+
+// Daily task
+const cardItems = $$(".card-item");
+const mediaLists = $$(".media-list");
+
+function setActiveCard(index) {
+  cardItems.forEach((item) => {
+    item.classList.remove("card-item--active");
+  });
+
+  mediaLists.forEach((item) => {
+    item.classList.remove("media-list--active");
+  });
+
+  cardItems[index].classList.add("card-item--active");
+  mediaLists[index].classList.add("media-list--active");
+}
+
+cardItems.forEach((card, index) => {
+  card.addEventListener("click", function () {
+    if (!this.classList.contains("card-item--active")) {
+      setActiveCard(index);
+    }
+  });
+});
+
+mediaLists.forEach((item, index) => {
+  item.addEventListener("click", function () {
+    if (!this.classList.contains("media-list--active")) {
+      setActiveCard(index);
+    }
+  });
+});
